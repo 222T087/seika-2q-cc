@@ -1,14 +1,8 @@
 //import anime from 'animejs'
 import Aos from 'aos';
+import 'aos/dist/aos.css';
 
-Aos.init({
-  offset: 100,
-  delay: 200,
-  duration: 500,
-  easing: 'ease-out',
-  anchorPlacement: 'bottom-top',
-  once: false
-});
+Aos.init();
 
 /*let elem = document.getElementById('elem');
 elem.addEventListener('click',function(){

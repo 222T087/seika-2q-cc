@@ -4,6 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <style>
+        body {
+            background-color: #e9e9e9;
+            text-align: center;
+        }
+
+        .container {
+            overflow: hidden;
+            margin: 100px auto;
+            padding: 50px 0;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 15rem;
+        }
+
+        .item {
+            margin: 15px;
+            width: 80%;
+            height: auto;
+            color: #212121;
+            font-size: 0.2em;
+            background-color: #fff;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .text {
+            font-size: clamp(1.5rem, 3vw, 5rem);
+            font-weight: bold;
+
+            color: #333;
+        }
+
+        .item_text {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        img {
+            margin: 0 auto;
+        }
+
         .wrapper {
             padding: 20px;
         }
@@ -19,17 +69,61 @@
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h1 data-aos="filip-down" data-aos-delay="500" data-aos-duration="1000">
-            Project AOS
+            Shiira's Portfolio
         </h1>
-    </header>
+    </header> -->
     <!-- <div class="wrapper">
         <div id="elem"><img src="pose_pien_uruuru_man.png" alt=" "></div>
     </div> -->
 
-    <div data-aos="fade-right">
+    <!-- <div data-aos="fade-right">
         この文字がフェードインします！
+    </div> -->
+
+    <div class="title">
+        <p class="text">Shiira's Portfolio</p>
+    </div>
+    <p class="text">fade</p>
+
+    <div class="container fade">
+        <div class="item" data-aos="fade">
+            <p class="item_text">fade</p>
+        </div>
+
+        <div class="item" data-aos="fade-up">
+            <p class="item_text">fade-up</p>
+        </div>
+
+        <div class="item" data-aos="fade-down">
+            <p class="item_text">fade-down</p>
+        </div>
+
+        <div class="item" data-aos="fade-left">
+            <p class="item_text">fade-left</p>
+        </div>
+
+        <div class="item" data-aos="fade-right">
+            <p class="item_text">fade-right</p>
+        </div>
+
+        <div class="item" data-aos="fade-up-left">
+            <p class="item_text">fade-up-left</p>
+        </div>
+
+        <div class="item" data-aos="fade-up-right">
+            <p class="item_text">fade-up-right</p>
+        </div>
+
+        <div class="item" data-aos="fade-down-left">
+            <p class="item_text">fade-down-left</p>
+        </div>
+
+        <div class="item" data-aos="fade-down-right">
+            <p class="item_text">fade-down-right</p>
+        </div>
+
     </div>
 
     <script src="app.js"></script>
