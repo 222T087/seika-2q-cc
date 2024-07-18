@@ -1,21 +1,19 @@
 # seika-2q-cc
-あいうえお **かきくけこ**  
-aiueo **kakikukeko**
 
-aaaa
+## 準備
 
-- おはようございます
-- こんにちは
-- こんばんは
+- Nodejs環境を整えてください。
 
-> 引用文章の表示
+## 開発の仕方
 
----
+### 開発の準備
+以下のコマンドを実行してください。
+```
+npm install
+```
 
-```javascript
-(() => {
-  'use strict';
-
-  console.log('Hello world');
-})();
+### 開発の着手
+以下のコマンドを実行してください。
+```
+npm run dev
 ```
