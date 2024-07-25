@@ -24,11 +24,15 @@
 
         .item {
             margin: 15px;
-            width: 80%;
+            width: 90%;
             height: auto;
             color: #212121;
             font-size: 0.2em;
             background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         .title {
@@ -39,9 +43,8 @@
         }
 
         .text {
-            font-size: clamp(1.5rem, 3vw, 5rem);
+            font-size: clamp(8rem, 6vw, 10rem);
             font-weight: bold;
-
             color: #333;
         }
 
@@ -64,51 +67,48 @@
             height: 50px;
             cursor: pointer;
         }
+
+        .youtube {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            margin: 0 auto;
+        }
+
+        .youtube iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            /*境界線の打ち消し*/
+        }
     </style>
-    <title></title>
+    <title>Shiira's Portfolio</title>
 </head>
 
 <body>
-    <!-- <header>
-        <h1 data-aos="filip-down" data-aos-delay="500" data-aos-duration="1000">
-            Shiira's Portfolio
-        </h1>
-    </header> -->
-    <!-- <div class="wrapper">
-        <div id="elem"><img src="pose_pien_uruuru_man.png" alt=" "></div>
-    </div> -->
-
-    <!-- <div data-aos="fade-right">
-        この文字がフェードインします！
-    </div> -->
-
     <div class="title">
-        <p class="text">Shiira</p>
-        
+        <p class="text">Shiira's Portfolio</p>
     </div>
-    <p class="text">Portfolio</p>
 
     <div class="container fade">
-        <div class="item" data-aos="fade">
+        <div class="item" data-aos="fade-down">
             <p class="item_text">LOGO</p>
             <img src="rogo.png" alt="" </div>
 
-            <div class="item" data-aos="fade-up">
-                <p class="item_text">fade-up</p>
-                <video src="boukensyoujo.mp4" 
-                       width="400" 
-                       height="300" 
-                       id="movie" 
-                       controls>
-                </video>
-            </div>
-
-            <div class="item" data-aos="fade-down">
-                <p class="item_text">fade-down</p>
+            <div class="item" data-aos="fade-right">
+                <p class="item_text">MUSIC</p>
+                <div class="youtube">
+                    <div id="movie1"></div>
+                </div>
             </div>
 
             <div class="item" data-aos="fade-left">
-                <p class="item_text">fade-left</p>
+                <div class="youtube">
+                    <div id="movie2"></div>
             </div>
 
             <div class="item" data-aos="fade-right">
@@ -132,7 +132,7 @@
             </div>
 
         </div>
-
+        <script src="https://www.youtube.com/iframe_api"></script>
         <script src="app.js"></script>
 </body>
 
