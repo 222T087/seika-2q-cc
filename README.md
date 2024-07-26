@@ -17,3 +17,6 @@ npm install
 ```
 npm run dev
 ```
+
+### ポートフォリオ
+URLの末尾に「/app.html」と入力するとポートフォリオのページになります。
