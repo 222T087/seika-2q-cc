@@ -85,6 +85,21 @@
             border: none;
             /*境界線の打ち消し*/
         }
+
+        .links {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .links a {
+            margin: 0 1rem;
+            color: #1DA1F2;
+            text-decoration: none;
+        }
+
+        .links a.youtube {
+            color: #FF0000;
+        }
     </style>
     <title>Shiira's Portfolio</title>
 </head>
@@ -93,6 +108,8 @@
     <div class="title">
         <p class="text">Shiira's Portfolio</p>
     </div>
+
+    <div class="text">⬇︎⬇︎⬇︎</div>
 
     <div class="container fade">
         <div class="item" data-aos="fade-down">
@@ -109,31 +126,36 @@
             <div class="item" data-aos="fade-left">
                 <div class="youtube">
                     <div id="movie2"></div>
-            </div>
+                </div>
 
-            <div class="item" data-aos="fade-right">
-                <p class="item_text">fade-right</p>
-            </div>
+                <div class="item" data-aos="fade">
+                    <p class="item_text">SNS</p>
+                    <div class="links">
+                        <a href="https://x.com/Shiira_P" target="_blank">X(Twitter)</a>
+                        <a href="https://www.youtube.com/@shiira_P" target="_blank"
+                            class="youtube">YouTube</a>
+                    </div>
+                </div>
+<!--
+                <div class="item" data-aos="fade-up-left">
+                    <p class="item_text">fade-up-left</p>
+                </div>
 
-            <div class="item" data-aos="fade-up-left">
-                <p class="item_text">fade-up-left</p>
-            </div>
+                <div class="item" data-aos="fade-up-right">
+                    <p class="item_text">fade-up-right</p>
+                </div>
 
-            <div class="item" data-aos="fade-up-right">
-                <p class="item_text">fade-up-right</p>
-            </div>
+                <div class="item" data-aos="fade-down-left">
+                    <p class="item_text">fade-down-left</p>
+                </div>
 
-            <div class="item" data-aos="fade-down-left">
-                <p class="item_text">fade-down-left</p>
+                <div class="item" data-aos="fade-down-right">
+                    <p class="item_text">fade-down-right</p>
+                </div>
+            -->
             </div>
-
-            <div class="item" data-aos="fade-down-right">
-                <p class="item_text">fade-down-right</p>
-            </div>
-
-        </div>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="app.js"></script>
+            <script src="https://www.youtube.com/iframe_api"></script>
+            <script src="app.js"></script>
 </body>
 
 </html>

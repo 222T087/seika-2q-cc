@@ -2,7 +2,9 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-Aos.init();
+Aos.init({
+  delay: 500,
+});
 
 var player1;
 var player2;
