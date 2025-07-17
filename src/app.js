@@ -1,6 +1,9 @@
+import './style.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-AOS.init();
+AOS.init({
+  delay: 500,
+});
 var player1;
 
 window.onYouTubeIframeAPIReady = function () {

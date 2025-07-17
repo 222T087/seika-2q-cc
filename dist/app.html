@@ -3,34 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <style>
-      body {
-        background-color: #e9e9e9;
-        text-align: center;
-      }
+    body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    text-align: center;
+    }
 
-      .youtube {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-        padding-bottom: 56.25%;
-      }
-      .youtube iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: none; /*境界線の打ち消し*/
-      }
+    header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header img {
+    max-width: 180px;
+    height: auto;
+    }
+
+    main {
+    padding: 40px 20px;
+    }
+
+    h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    }
+
+    .content-section {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .youtube-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    }
+
+    .youtube-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    }
+
+    footer {
+    margin-top: 100px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    }
+
     </style>
     <title></title>
   </head>
   <body>
-    <div data-aos="fade"></div>
-    <div id="player"></div>
-    <div class="youtube">
-      <div id="movie1"></div>
+    <header data-aos="fade-down">
+      <img src="logo.png" alt=" ">
+  </header>
+    <div data-aos="zoom-in">
+     <div id="player"></div>
+      <div class="youtube">
+        <div id="movie1"></div>
+      </div>
     </div>
+  </div>
     </div>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="app.js"></script>
