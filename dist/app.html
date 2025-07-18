@@ -3,83 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <style>
-    body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    text-align: center;
-    }
+      body {
+        font-family: sans-serif;
+        background-color: #f0f0f0;
+        color: #333;
+        margin: 0;
+        text-align: center;
+      }
 
-    header {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
+      header {
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
 
-    header img {
-    max-width: 180px;
-    height: auto;
-    }
+      header img {
+        max-width: 150px;
+        height: auto;
+      }
 
-    main {
-    padding: 40px 20px;
-    }
+      main {
+        padding-top: 80px;
+      }
 
-    h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    }
+      .hero-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #e9e9e9;
+      }
 
-    .content-section {
-    max-width: 900px;
-    margin: 100px auto;
-    padding: 40px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+      .hero-section .text {
+        font-size: clamp(3rem, 10vw, 8rem);
+        font-weight: bold;
+        color: #333;
+      }
 
-    .youtube-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 8px;
-    }
+      .content-section {
+        max-width: 900px;
+        margin: 120px auto;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
 
-    .youtube-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: none;
-    }
+      .content-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
 
-    footer {
-    margin-top: 100px;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    }
+      .youtube-wrapper {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: #000;
+      }
 
+      .youtube-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+
+      footer {
+        margin-top: 100px;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+      }
     </style>
-    <title></title>
   </head>
   <body>
     <header data-aos="fade-down">
-      <img src="logo.png" alt=" ">
-  </header>
-    <div data-aos="zoom-in">
-     <div id="player"></div>
-      <div class="youtube">
-        <div id="movie1"></div>
+      <img src="logo.png" alt="サイトロゴ" />
+    </header>
+
+    <main>
+      <div class="hero-section">
+        <p class="text" data-aos="zoom-in">Shiira's Portfolio</p>
       </div>
-    </div>
-  </div>
-    </div>
+
+      <div class="content-section" data-aos="zoom-in">
+        <div class="youtube-wrapper">
+          <div id="movie1"></div>
+        </div>
+      </div>
+
+      <div class="content-section" data-aos="zoom-in">
+        <div class="youtube-wrapper">
+          <div id="movie2"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer data-aos="fade-up">
+      <p>&copy; 2024 Shiira's Portfolio</p>
+    </footer>
     <script src="https://www.youtube.com/iframe_api"></script>
     <script src="app.js"></script>
   </body>
