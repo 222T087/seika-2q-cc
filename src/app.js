@@ -44,10 +44,26 @@ window.onYouTubeIframeAPIReady = function () {
 };
 
 const linksdata = [
-  { href: '#', label: 'X', iconClass: 'fa-brands fa-x-twitter' },
-  { href: '#', label: 'Instagram', iconClass: 'fa-brands fa-instagram' },
-  { href: '#', label: 'YouTube', iconClass: 'fa-brands fa-youtube' },
-  { href: '#', label: 'Niconico', iconClass: 'fa-solid fa-n' },
+  {
+    href: 'https://x.com/Shiira_P',
+    label: 'X',
+    iconClass: 'fa-brands fa-x-twitter',
+  },
+  {
+    href: 'https://www.instagram.com/shiira_favo/',
+    label: 'Instagram',
+    iconClass: 'fa-brands fa-instagram',
+  },
+  {
+    href: 'https://www.youtube.com/@shiira_P',
+    label: 'YouTube',
+    iconClass: 'fa-brands fa-youtube',
+  },
+  {
+    href: 'https://www.nicovideo.jp/user/129544334',
+    label: 'Niconico',
+    iconClass: 'fa-solid fa-n',
+  },
 ];
 
 const linkContainer = document.getElementById('links-container');
