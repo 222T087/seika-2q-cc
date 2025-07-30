@@ -1,7 +1,8 @@
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init({
-  delay: 500,
+  duration: 800,
+  once: true,
 });
 var player1;
 var player2;
@@ -41,3 +42,23 @@ window.onYouTubeIframeAPIReady = function () {
     },
   });
 };
+
+const linksdata = [
+  { href: '#', label: 'X', iconClass: 'fa-brands fa-x-twitter' },
+  { href: '#', label: 'Instagram', iconClass: 'fa-brands fa-instagram' },
+  { href: '#', label: 'YouTube', iconClass: 'fa-brands fa-youtube' },
+  { href: '#', label: 'Niconico', iconClass: 'fa-solid fa-n' },
+];
+
+const linkContainer = document.getElementById('links-container');
+
+linksdata.forEach((data) => {
+  const link = document.createElement('a');
+  link.href = data.href;
+  link.target = '_blank';
+  link.setAttribute('aria-label', data.label);
+  const icon = document.createElement('i');
+  icon.className = data.iconClass;
+  link.appendChild(icon);
+  linkContainer.appendChild(link);
+});
